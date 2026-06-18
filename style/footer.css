@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--background-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-color-primary);
+}
+
+footer .logo1 {
+    order: 1;
+}
+
+footer .logo1 img {
+    transition: transform 700ms;
+}
+
+footer .logo1 img[src*="logo1"]:hover {
+    transform: rotate(90deg);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer div a:hover::after{
+    opacity: 1;
+    transform: scaleX(1);
+}
